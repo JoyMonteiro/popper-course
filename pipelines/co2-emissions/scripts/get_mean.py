@@ -29,4 +29,4 @@ with open(fname, 'r') as fi, open(fout, 'w') as fo:
             group_sum += float(row[last])
             year = row[0]
 
-        w.writerow([year, group_sum / 5.0])
+        w.writerow([year, group_sum / group_size])
